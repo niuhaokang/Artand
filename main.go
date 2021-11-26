@@ -14,7 +14,7 @@ import (
 	"sync"
 )
 
-var wg sync.WaitGroup
+var wg = sync.WaitGroup{}
 
 func isExist(path string)(bool){
 	_, err := os.Stat(path)
